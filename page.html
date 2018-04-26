@@ -11,6 +11,7 @@
 <body>
    
    <!-- Header -->
+
    	<header>
    		<img src="images/logo.png" alt="Logo" id="logo" />
    		<nav id="menu"> <!-- Menu de navigation avec liens-->
@@ -27,29 +28,50 @@
 
 <section id="section_accueil">
 
-        	
-
-			<div id="slider">
-				<div class="slogan">
+			<div class="carousel">
+    <div class="carousel-inner">
+    	<div class="slogan">
 				<h1><span>WEBAGENCY </span>: L'AGENCE DE TOUS VOS PROJETS !</h1>
-			<h2>Vous avez un projet web ? La WebAgency vous aide à le réaliser !</h2>
+			<h2>Vous avez un projet web ? La WebAgency vous aide à le réaliser !</h2><br />
 			<a href="#projets" class="boutoninfos">Plus d'infos</a>
+        </div>
+        <input class="carousel-open" type="radio" id="carousel-1" name="carousel" aria-hidden="true" hidden="" checked="checked">
+        <div class="carousel-item">
+            <img src="images/slider/bg1.jpg" alt="Image fille">
 			</div>
-				<ul id="slider_content">
-					<li><img src="images/slider/bg1.jpg" alt="Image fille" /></li>
-					<li><img src="images/slider/bg2.jpg" alt="Image garçon" /></li>
-				</ul>
-			</div>
+        <input class="carousel-open" type="radio" id="carousel-2" name="carousel" aria-hidden="true" hidden="">
+        <div class="carousel-item">
+            <img src="images/slider/bg2.jpg" alt="Image garçon">
+        </div>
+    
+        
+        <label for="carousel-2" class="carousel-control next control-1"><i class="fas fa-angle-right"></i></label>
+        <label for="carousel-1" class="carousel-control prev control-2"><i class="fas fa-angle-left"></i></label>
+        
+        <label for="carousel-2" class="carousel-control prev control-1"><i class="fas fa-angle-left"></i></label>
+        <label for="carousel-1" class="carousel-control next control-2"><i class="fas fa-angle-right"></i></label>
+        <ol class="carousel-indicators">
+            <li>
+                <label for="carousel-1" class="carousel-bullet">•</label>
+            </li>
+            <li>
+                <label for="carousel-2" class="carousel-bullet">•</label>
+            </li>
+        </ol>
+    </div>
+</div>
+
 </section>
 
     
 	<!-- Section Nos services -->
+
 	<section id="section_services">
 		<div class="titre">
 			<h1 id="services">NOS SERVICES</h1>
-			<hr/>
-			<div id="circle_1"></div>
-			<p>bla bla bla</p>
+			<hr class="ligne"/>
+			<div id="circle"></div>
+			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
 		</div>
 
 
@@ -60,33 +82,33 @@
 			</figure>
 			<ul class="description_services">
 				<li class="liste_services">
-					<div class="icone">
+					<div class="icone_services">
 						<i class="fas fa-chart-line"></i>
-					</div>
 					<i class="fas fa-circle"></i>
+					</div>
 					<div class="texte_description">
 					<h2>UX design</h2>
-					<p>bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla</p>
+					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat</p>
 				</div>
 			</li>
 			<li class="liste_services">
-					<div class="icone">
+					<div class="icone_services">
 						<i class="fas fa-cubes"></i>
-					</div>
 					<i class="fas fa-circle"></i>
+					</div>
 					<div class="texte_description">
 					<h2>UI design</h2>
-					<p>bla bla bla</p>
+					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat</p>
 				</div>
 			</li>
 			<li class="liste_services">
-					<div class="icone">
+					<div class="icone_services">
 						<i class="fas fa-chart-pie"></i>
-					</div>
 					<i class="fas fa-circle"></i>
+					</div>
 				<div class="texte_description">
 					<h2>SEO</h2>
-					<p>bla bla bla</p>
+					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat</p>
 				</div>
 			</li>
 		</ul>
@@ -94,66 +116,118 @@
 </section>
 
 	<!-- Section Nos projets -->
+
 	<section id="section_projets">
 		<div class="titre">
 			<h1 id="projets">NOS PROJETS</h1>
-			<hr/>
-			<i class="fas fa-circle"></i>
-			<p>bla bla bla</p>
-		</div>
+			<hr class="ligne"/>
+			<div id="circle"></div>
+			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+		</div>	
+		<nav id="menu_projets">
+			<ul>
+				<li><a href="#" class="allWorks_title">All Works</a><i class="fas fa-caret-down"></i></li>
+				<li><a href="#" class="Creative_title">Creative</a><i class="fas fa-caret-down"></i></li>
+				<li><a href="#" class="Corporate_title">Corporate</a><i class="fas fa-caret-down"></i></li>
+				<li><a href="#" class="Portfolio_title">Portfolio</a><i class="fas fa-caret-down"></i></li>
+			</ul>
+		</nav>
 
-		<ul>
-			<li class="allWorks">All Works</li>
-			<li class="creative">Creative</li>
-			<li class="corporate">Corporate</li>
-			<li class="portfolio">Portfolio</li>
-		</ul>
+		<div class="portfolio">
 
-		<div class="exemples">
-			<div class="imgExemples">
-				<img src="images/portfolio/01.jpg" alt="lunettes" id="lunettes" />
-				<div class="texteImage">HHHH
-				</div>
-			</div>
-			<div class="imgExemples">
-				<img src="images/portfolio/02.jpg" alt="lapin rose" id="lapinRose" />
-				<div class="texteImage">HHHH
-				</div>
-			</div>
-			<div class="imgExemples">
-				<img src="images/portfolio/03.jpg" alt="Pompadour" id="pompadour" />
-				<div class="texteImage">HHHH
-				</div>
-			</div>
-			<div class="imgExemples">
-				<img src="images/portfolio/04.jpg" alt="cahier" id="cahier" />
-				<div class="texteImage">HHHH
-				</div>
-			</div>
-			<div class="imgExemples">
-				<img src="images/portfolio/05.jpg" alt="shopping" id="shopping" />
-				<div class="texteImage">HHHH
-				</div>
-			</div>
-			<div class="imgExemples">
-				<img src="images/portfolio/06.jpg" alt="city" id="city" />
-				<div class="texteImage">HHHH
-				</div>
-			</div>
-			<div class="imgExemples">
-				<img src="images/portfolio/07.jpg" alt="fusée" id="fusée" />
-				<div class="texteImage">HHHH
-				</div>
-			</div>
-			<div class="imgExemples">
-				<img src="images/portfolio/08.jpg" alt="bureau" id="bureau" />
-				<div class="texteImage">HHHH
-				</div>
-			</div>
+  			<figure class="imgPortfolio">
+			<img src="images/portfolio/01.jpg" alt="lunettes" id="lunettes"/>
+				<figcaption>
+					<h3>Lorem ipsum</h3>
+					<p>Lorem ipsum dolor sit amet</p>
+						<div class="icone_projets">
+						<i class="fas fa-eye"></i>
+						</div>
+				</figcaption>
+			</figure>
+
+			<figure class="imgPortfolio">
+			<img src="images/portfolio/02.jpg" alt="lapin rose" id="lapinRose" />
+				<figcaption>
+				<h3>Lorem ipsum</h3>
+				<p>Lorem ipsum dolor sit amet</p>
+					<div class="icone_projets">
+					<i class="fas fa-eye"></i>
+					</div>
+				</figcaption>
+			</figure>
+
+			<figure class="imgPortfolio">
+			<img src="images/portfolio/03.jpg" alt="Pompadour" id="pompadour" />
+				<figcaption>
+				<h3>Lorem ipsum</h3>
+				<p>Lorem ipsum dolor sit amet</p>
+					<div class="icone_projets">
+					<i class="fas fa-eye"></i>
+					</div>
+				</figcaption>
+			</figure>
+      
+			<figure class="imgPortfolio">
+			<img src="images/portfolio/04.jpg" alt="cahier" id="cahier" />
+				<figcaption>
+				<h3>Lorem ipsum</h3>
+				<p>Lorem ipsum dolor sit amet</p>
+					<div class="icone_projets">
+					<i class="fas fa-eye"></i>
+					</div>
+				</figcaption>
+			</figure>
+      
+			<figure class="imgPortfolio">
+			<img src="images/portfolio/05.jpg" alt="shopping" id="shopping" />
+				<figcaption>
+				<h3>Lorem ipsum</h3>
+				<p>Lorem ipsum dolor sit amet</p>
+					<div class="icone_projets">
+					<i class="fas fa-eye"></i>
+					</div>
+				</figcaption>
+			</figure>
+
+			<figure class="imgPortfolio">
+			<img src="images/portfolio/06.jpg" alt="city" id="city" />
+				<figcaption>
+				<h3>Lorem ipsum</h3>
+				<p>Lorem ipsum dolor sit amet</p>
+					<div class="icone_projets">
+					<i class="fas fa-eye"></i>
+					</div>
+				</figcaption>
+			</figure>
+      
+			<figure class="imgPortfolio">
+			<img src="images/portfolio/07.jpg" alt="fusée" id="fusée" />
+				<figcaption>
+				<h3>Lorem ipsum</h3>
+				<p>Lorem ipsum dolor sit amet</p>
+					<div class="icone_projets">
+					<i class="fas fa-eye"></i>
+					</div>
+				</figcaption>
+			</figure>
+
+			<figure class="imgPortfolio">
+			<img src="images/portfolio/08.jpg" alt="bureau" id="bureau" />
+				<figcaption>
+				<h3>Lorem ipsum</h3>
+				<p>Lorem ipsum dolor sit amet</p>
+					<div class="icone_projets">
+					<i class="fas fa-eye"></i>
+					</div>
+				</figcaption>
+			</figure>
+
 		</div>
 	</section>
 
 	<!-- Section Contact -->
+
 	<section id="section_contact">
 		<div id=map>
 			<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d5248.300405043677!2d2.3454465978166743!3d48.874413115021255!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47e66e145cb52f15%3A0x4d3ec41b2cadff0!2s25+Rue+d&#39;Hauteville%2C+75010+Paris!5e0!3m2!1sfr!2sfr!4v1523544806579" width= 100%; height= 600px; frameborder="0" style="border:0" allowfullscreen></iframe>
@@ -163,6 +237,7 @@
 			<h2>WebAgency SAS</h2>
 			<p>25 rue d'Hauteville 75010 Paris
 				<br>Tel : 01 02 03 04 05</p>
+			</div>
 
 			<form method="post" action="traitement.php">
 				<p>
