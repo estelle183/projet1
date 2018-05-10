@@ -4,71 +4,64 @@
     font-family: 'robotoregular';
     src: url('fonts/roboto-regular-webfont.eot');
     src: url('fonts/roboto-regular-webfont.eot?#iefix') format('embedded-opentype'),
-         url('fonts/roboto-regular-webfont.woff2') format('woff2'),
-         url('fonts/roboto-regular-webfont.woff') format('woff'),
-         url('fonts/roboto-regular-webfont.ttf') format('truetype'),
-         url('fonts/roboto-regular-webfont.svg#robotoregular') format('svg');
+    url('fonts/roboto-regular-webfont.woff2') format('woff2'),
+    url('fonts/roboto-regular-webfont.woff') format('woff'),
+    url('fonts/roboto-regular-webfont.ttf') format('truetype'),
+    url('fonts/roboto-regular-webfont.svg#robotoregular') format('svg');
     font-weight: normal;
     font-style: normal;
-
 }
 
 @font-face {
     font-family: 'robotobold';
     src: url('fonts/Roboto-Bold-webfont.eot');
     src: url('fonts/Roboto-Bold-webfont.eot?#iefix') format('embedded-opentype'),
-         url('fonts/Roboto-Bold-webfont.woff2') format('woff2'),
-         url('fonts/Roboto-Bold-webfont.woff') format('woff'),
-         url('fonts/Roboto-Bold-webfont.ttf') format('truetype'),
-         url('fonts/Roboto-Bold-webfont.svg#robotobold') format('svg');
+    url('fonts/Roboto-Bold-webfont.woff2') format('woff2'),
+    url('fonts/Roboto-Bold-webfont.woff') format('woff'),
+    url('fonts/Roboto-Bold-webfont.ttf') format('truetype'),
+    url('fonts/Roboto-Bold-webfont.svg#robotobold') format('svg');
     font-weight: normal;
     font-style: normal;
-
 }
 
 
 
-body
-{
-	font-family: 'robotoregular', sans-serif;
-	color: #77777;
-	margin: auto;
-	width: auto;
-
+body {
+    font-family: 'robotoregular', sans-serif;
+    color: #77777;
+    margin: auto;
+    width: auto;
 }
 
-.titre
-{
-	font-family: 'robotobold', sans-serif;
-	font-size: 2.0em;
-	text-align: center;
-	padding-top: 2%;
-
+.titre {
+    font-family: 'robotobold', sans-serif;
+    font-size: 2.0em;
+    text-align: center;
+    padding-top: 2%;
 }
 
-.titre p
-{
-	font-size: 0.4em;
-	color: #717479;
+.titre p {
+    font-size: 0.4em;
+    color: #717479;
 }
 
-header
-{
+header {
 
-	justify-content: space-around;
-	background-color: white;
-	display: flex;
-	padding: 25px;
-	width: auto;
+    justify-content: space-around;
+    background-color: white;
+    display: flex;
+    padding: 25px;
+    width: auto;
 }
+
 
 
 
 
 
 /* Mise en place de la ligne séparatrice et bulle bleue au centre sections Services et Projets */
-.ligne 
-{
+
+.ligne {
     display: block;
     border: none;
     border-top: solid;
@@ -76,134 +69,129 @@ header
     color: #EBEBEB;
     text-align: center;
     width: 15%
-
 }
 
-#circle
-{
-	width: 14px;
-	height: 14px;
-	background-color: #5dadd3;
-  	border: 6px solid white;
-  	border-radius: 50%;
-  	margin: auto;
-  	margin-top: -30px;
-  	position: relative;
-} 
+#circle {
+    width: 14px;
+    height: 14px;
+    background-color: #5dadd3;
+    border: 6px solid white;
+    border-radius: 50%;
+    margin: auto;
+    margin-top: -30px;
+    position: relative;
+}
+
 
 
 
 /* --------Navigation-------- */
-#menu ul
-{
+
+#menu ul {
     list-style-type: none;
     display: flex;
-
 }
 
-#menu li
-{
+#menu li {
     margin-right: 12px;
 }
 
-#menu a
-{
+#menu a {
     font-size: 1.1em;
     text-decoration: none;
     color: #505050;
 }
 
-#menu a:hover /* Apparition du trait au-dessus au survol */
+#menu a:hover
+/* Apparition du trait au-dessus au survol */
+
 {
     border-top: 3px solid #5CADD3;
     padding-top: 10px;
 }
 
-			/* --------Section Accueil-------- */
 
+/* --------Section Accueil-------- */
 
-.slogan /*Texte sur le carousel*/
+.slogan
+/*Texte sur le carousel*/
+
 {
-	
-	width: 36%;
-	font-size: 1.4em;
-	font-family: 'robotobold', sans-serif;
-	color: white;
-	z-index: 10;
-	position: absolute;
-	padding-left: 10%;
-	padding-top: 8%;
+
+    width: 36%;
+    font-size: 1.4em;
+    font-family: 'robotobold', sans-serif;
+    color: white;
+    z-index: 10;
+    position: absolute;
+    padding-left: 10%;
+    padding-top: 8%;
 }
 
-.slogan span
-{
-	color: #42a6ce;
+.slogan span {
+    color: #42a6ce;
 }
 
-.slogan h2
-{
-	color: white;
-	font-family: 'robotoregular', sans-serif;
-	font-size: 0.7em;
-	font-weight: normal;
+.slogan h2 {
+    color: white;
+    font-family: 'robotoregular', sans-serif;
+    font-size: 0.7em;
+    font-weight: normal;
 }
 
-.boutoninfos /* Bouton infos cliquable avec lien section "Nos projets" */
+.boutoninfos
+/* Bouton infos cliquable avec lien section "Nos projets" */
+
 {
-	
-	background: #5cadd3;
-	color: white;
-	font-family: 'robotoregular', sans-serif;
-	font-size: 0.8em;
-	text-align: center;
-	text-decoration: none;
-	padding: 12px 18px;
-	border-radius: 2px;
-	box-shadow: 0px 4px 0px #4A98BD;
+
+    background: #5cadd3;
+    color: white;
+    font-family: 'robotoregular', sans-serif;
+    font-size: 0.8em;
+    text-align: center;
+    text-decoration: none;
+    padding: 12px 18px;
+    border-radius: 2px;
+    box-shadow: 0px 4px 0px #4A98BD;
 }
+
 
 /* --------Carousel-------- */
 
-.carousel 
-{
+.carousel {
     position: relative;
     box-shadow: 0px 1px 6px rgba(0, 0, 0, 0.64);
     margin-top: 26px;
 }
 
-.carousel-inner 
-{
+.carousel-inner {
     position: relative;
     overflow: hidden;
     width: 100%;
 }
 
-.carousel-open:checked + .carousel-item 
-{
+.carousel-open:checked+.carousel-item {
     position: static;
     opacity: 100;
 }
 
-.carousel-item 
-{
+.carousel-item {
     position: absolute;
     opacity: 0;
     transition: opacity 0.6s ease-out;
 }
 
-.carousel-item img 
-{
+.carousel-item img {
     display: block;
     height: auto;
     max-width: 100%;
 }
 
-.carousel-control.prev 
-{
+.carousel-control.prev {
     background: rgba(0, 0, 0, 0.28);
     color: #fff;
     cursor: pointer;
-     display: none;
+    display: none;
     align-items: center;
     justify-content: center;
     font-size: 40px;
@@ -216,11 +204,10 @@ header
     transform: translate(0, -50%);
     text-align: center;
     width: 40px;
-    z-index: 10;  
+    z-index: 10;
 }
 
-.carousel-control.next 
-{
+.carousel-control.next {
     background: rgba(0, 0, 0, 0.28);
     color: #fff;
     cursor: pointer;
@@ -241,20 +228,17 @@ header
     right: 0%;
 }
 
-.carousel-control:hover 
-{
+.carousel-control:hover {
     background: rgba(0, 0, 0, 0.8);
     color: #aaaaaa;
 }
 
-#carousel-1:checked ~ .control-1,
-#carousel-2:checked ~ .control-2
-{
+#carousel-1:checked~.control-1,
+#carousel-2:checked~.control-2 {
     display: flex;
 }
 
-.carousel-indicators 
-{
+.carousel-indicators {
     list-style: none;
     margin: 0;
     padding: 0;
@@ -266,259 +250,257 @@ header
     z-index: 10;
 }
 
-.carousel-indicators li 
-{
+.carousel-indicators li {
     display: inline-block;
     margin: 0 5px;
 }
 
-.carousel-bullet 
-{
+.carousel-bullet {
     color: #fff;
     cursor: pointer;
     display: block;
     font-size: 35px;
 }
 
-.carousel-bullet:hover 
-{
+.carousel-bullet:hover {
     color: #aaaaaa;
 }
 
-#carousel-1:checked ~ .control-1 ~ .carousel-indicators li:nth-child(1) .carousel-bullet,
-#carousel-2:checked ~ .control-2 ~ .carousel-indicators li:nth-child(2) .carousel-bullet
-{
+#carousel-1:checked~.control-1~.carousel-indicators li:nth-child(1) .carousel-bullet,
+#carousel-2:checked~.control-2~.carousel-indicators li:nth-child(2) .carousel-bullet {
     color: #428bca;
 }
 
-			/* --------Section Services-------- */
 
-#description_services 
-{
-	display: flex;
-	justify-content: space-around;
-	padding-left: 50px;
-	padding-right: 15px;
-	padding-bottom: 2%;
-	
+/* --------Section Services-------- */
 
+#description_services {
+    display: flex;
+    justify-content: space-around;
+    padding-left: 50px;
+    padding-right: 15px;
+    padding-bottom: 2%;
 }
 
-.liste_services
-{
-	display: flex;
-	margin-right: 10%;
-	margin-left: 15%;
+.liste_services {
+    display: flex;
+    margin-right: 10%;
+    margin-left: 15%;
 }
 
-.fa-cubes,.fa-chart-line, .fa-chart-pie
-{
-	color: #5dadd3;
-	position: relative;
-	margin-top: 25%;
-	font-size: 1.5em;
+.fa-cubes,
+.fa-chart-line,
+.fa-chart-pie {
+    color: #5dadd3;
+    position: relative;
+    margin-top: 25%;
+    font-size: 1.5em;
 }
 
-.fa-circle 
-{
-  	color: #5dadd3;
-  	background-color: #5dadd3;
-  	border-radius: 50%;
-  	position: relative;
-  	margin-left: 92%;
-  	bottom: 26px;
-  	font-size: 0.65em;
+.fa-circle {
+    color: #5dadd3;
+    background-color: #5dadd3;
+    border-radius: 50%;
+    position: relative;
+    margin-left: 92%;
+    bottom: 26px;
+    font-size: 0.65em;
 }
 
-.icone_services
-{
-	width: 55px;
-	height: 55px;
-	border-radius: 50%;
-	border: 1px solid #bec0c4;
-	margin-top: 30px;
-	min-width: 55px;
-	position: relative;
-	text-align: center;	
+.icone_services {
+    width: 55px;
+    height: 55px;
+    border-radius: 50%;
+    border: 1px solid #bec0c4;
+    margin-top: 30px;
+    min-width: 55px;
+    position: relative;
+    text-align: center;
 }
 
 
-.texte_description
-{
-	
-margin-left: 8%;
-	
+.texte_description {
+
+    margin-left: 8%;
 }
 
-.texte_description h2
-{
-	font-family: 'robotoregular', sans-serif;
-	font-size: 1.0em;
-	
+.texte_description h2 {
+    font-family: 'robotoregular', sans-serif;
+    font-size: 1.0em;
 }
 
-.texte_description p
-{
-	font-size: 0.8em;
-	color: #717479;
-	text-align: justify;
-	
-}
-
-			/* --------Section Projets-------- */
-
-#section_projets
-{
-	background-color: #F5F5F5;
-	padding-bottom: 30px;
+.texte_description p {
+    font-size: 0.8em;
+    color: #717479;
+    text-align: justify;
 }
 
 
-#menu_projets ul 
-{
+/* --------Section Projets-------- */
+
+#section_projets {
+    background-color: #F5F5F5;
+    padding-bottom: 30px;
+}
+
+
+#menu_projets ul {
     list-style-type: none;
     display: flex;
     padding-left: 0px;
     justify-content: center;
     margin-top: 40px;
     margin-bottom: 40px;
-
 }
 
-.allWorks_title
-{
-	border-top-left-radius: 8px;
-	border-bottom-left-radius: 8px;
+.allWorks_title {
+    border-top-left-radius: 8px;
+    border-bottom-left-radius: 8px;
 }
 
-.Portfolio_title
-{
-	border-top-right-radius: 8px;
-	border-bottom-right-radius: 8px;
+.Portfolio_title {
+    border-top-right-radius: 8px;
+    border-bottom-right-radius: 8px;
 }
 
-#menu_projets a
-{
+#menu_projets a {
     font-size: 1.1em;
     text-decoration: none;
     color: #505050;
     background-color: #E0DCDC;
     padding: 15px;
     cursor: pointer;
-        
 }
 
-#menu_projets li
-{
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-	justify-content: center;
+#menu_projets li {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
 
-.fa-caret-down /*--- flèche bleue invisible---*/
+.fa-caret-down
+/*--- flèche bleue invisible---*/
+
 {
-	color: #4A98BD;
-	font-size: 1.9em;
-	visibility: hidden;
-	margin-top: -7px;
+    color: #4A98BD;
+    font-size: 1.9em;
+    visibility: hidden;
+    margin-top: -7px;
 }
 
-#menu_projets a:hover /*---Modification couleur de fond et de la police au survol---*/
+#menu_projets a:hover
+/*---Modification couleur de fond et de la police au survol---*/
+
 {
-    
+
     background-color: #5dadd3;
     color: white;
     box-shadow: 0px 5px 0px #4A98BD;
-    
 }
 
-#menu_projets a:hover+.fa-caret-down /*---Rendre visible la flèche au survol---*/
+#menu_projets a:hover+.fa-caret-down
+/*---Rendre visible la flèche au survol---*/
+
 {
-	visibility: visible;
+    visibility: visible;
 }
 
-.portfolio
-{
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-around;
-  margin-left: 10px;
-  margin-right: 10px;
-  
+.portfolio {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin-left: 10px;
+    margin-right: 10px;
 }
 
-.icone_projets
-{
-  width: 50px;
-  height: 50px;
-  border-radius: 50%;
-  border: 2px solid white;
-  min-width: 50px;
-  text-align: center; 
-  background-color: #5dadd3;
-  position: relative;
-  margin-left: 75%;
-  bottom: 123px;
+.icone_projets {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    border: 2px solid white;
+    min-width: 50px;
+    text-align: center;
+    background-color: #5dadd3;
+    position: relative;
+    margin-left: 75%;
+    bottom: 123px;
 }
 
-.fa-eye
-{
-  color: white;
-  margin-top: 25%;
-  font-size: 1.5em;
+.fa-eye {
+    color: white;
+    margin-top: 25%;
+    font-size: 1.5em;
 }
 
-.imgPortfolio img 
-{
+.imgPortfolio img {
     width: 100%;
 }
 
-.imgPortfolio
-{ 
+.imgPortfolio {
     position: relative;
-    overflow: hidden; 
+    overflow: hidden;
     height: auto;
     width: 325px;
     margin: 15px;
-    background-color: rgba(0,0,0,0);
+    background-color: rgba(0, 0, 0, 0);
 }
 
-figcaption 
-{ 
-    position: absolute; 
-    background: rgba(0,0,0,0.6); 
-    color: white; 
+figcaption {
+    position: absolute;
+    background: rgba(0, 0, 0, 0.6);
+    color: white;
     width: 100%;
     height: 50%;
     padding: 0 10px;
     opacity: 0;
-    bottom: -20px; 
+    bottom: -20px;
     transition: all 0.7s ease;
 }
 
-.imgPortfolio:hover figcaption 
-{
+.imgPortfolio:hover figcaption {
     opacity: 1;
     bottom: 0;
 }
 
-figcaption h3
-{
-	font-size: 1.2em;
+figcaption h3 {
+    font-size: 1.2em;
 }
 
-figcaption p
-{
-	font-size: 0.9em;
-	color: white;
-
+figcaption p {
+    font-size: 0.9em;
+    color: white;
 }
 
-#formulaire
-{
-
+#formulaire {
+    background-color: #EAF3FC;
+    opacity: 0.9;
+    position: absolute;
+    margin-left: 70%;
+    margin-top: 10%;
+    padding: 10px 10px 10px 10px;
 }
+
+#formulaire h1,
+h2 {
+    font-family: 'robotobold', sans-serif;
+}
+
+#formulaire p {
+    font-family: 'robotoregular', sans-serif;
+}
+
+#formulaire h2,
+p {
+    color: #505050;
+    font-size: 0.9em;
+}
+
+#form_contact p {}
+
+
+
+
 
 
 
@@ -547,175 +529,137 @@ figcaption p
 
 /* --------Responsive-------- */
 
+@media screen and (min-width: 992px) and (max-width: 1200px) {
 
-
-@media screen and (min-width: 992px) and (max-width: 1200px){
-
-.slogan
-{
-	padding-top: 5%;
-	font-size: 1.3em;
-	width: 38%;
-	
-}
+    .slogan {
+        padding-top: 5%;
+        font-size: 1.3em;
+        width: 38%;
+    }
 }
 
-@media all and (min-width: 768px) and (max-width: 992px){
+@media all and (min-width: 768px) and (max-width: 992px) {
 
-.slogan
-{
-	padding-top: 2%;
-	font-size: 1.1em;
-	width: 40%;
-	
-}
-.boutoninfos
-{
-	
-	font-size: 0.7em;
-	padding: 10px 14px;
-}
+    .slogan {
+        padding-top: 2%;
+        font-size: 1.1em;
+        width: 40%;
+    }
+    .boutoninfos {
 
-#description_services 
-{
-	display: flex;
-	flex-direction: column;
-	justify-content: flex-start;
-	align-items: center;
-	padding-left: 0px;
-	padding-right: 0px;
-	padding-bottom: 2%;
-	
+        font-size: 0.7em;
+        padding: 10px 14px;
+    }
 
-}
+    #description_services {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+        padding-left: 0px;
+        padding-right: 0px;
+        padding-bottom: 2%;
+    }
 
-.ligne 
-{
-   
-    width: 22%
+    .ligne {
 
-}
+        width: 22%
+    }
 
-.liste_services
-{
-	display: flex;
-	margin-right: 10%;
-	margin-left: 6%;
-}
+    .liste_services {
+        display: flex;
+        margin-right: 10%;
+        margin-left: 6%;
+    }
 }
 
-@media all and (max-width: 768px){
+@media all and (max-width: 768px) {
 
-#logo
-{
-	height: auto;
-	width: 220px;
+    #logo {
+        height: auto;
+        width: 220px;
+    }
+
+    .slogan {
+        width: 100%;
+        font-size: 0.9em;
+        padding-top: 0%;
+    }
+
+    .titre {
+
+        font-size: 1.6em;
+        padding-left: 10%;
+        padding-right: 10%;
+    }
+
+    .titre p {
+        font-size: 0.5em;
+    }
+    .boutoninfos,
+    .carousel-indicators {
+        visibility: hidden;
+    }
+    .carousel-control.next {
+
+        font-size: 20px;
+        height: 40px;
+        border-bottom-left-radius: 40px;
+        border-top-left-radius: 40px;
+        width: 20px;
+    }
+    .carousel-control.prev {
+
+        font-size: 20px;
+        height: 40px;
+        border-bottom-right-radius: 40px;
+        border-top-right-radius: 40px;
+        width: 20px;
+    }
+
+    header {
+        display: flex;
+        flex-direction: column;
+        background-color: white;
+        align-items: center;
+        justify-content: space-between;
+        height: 120px;
+        padding: 10px;
+    }
+
+    #menu a {
+        font-size: 0.9em;
+    }
+
+    #menu a:hover {
+        border-top: 2px solid #5CADD3;
+        padding-top: 7px;
+    }
+
+    .ligne {
+
+        width: 28%
+    }
+
+    #circle {
+        width: 12px;
+        height: 12px;
+        margin-top: -27px;
+    }
+
+    #description_services {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+        padding-left: 0px;
+        padding-right: 0px;
+        padding-bottom: 2%;
+    }
+
+    .liste_services {
+        display: flex;
+        margin-right: 10%;
+        margin-left: 6%;
+    }
 }
-
-.slogan
-{
-	width: 100%;
-	font-size: 0.9em;
-	padding-top: 0%;
-}
-
-.titre
-{
-	
-	font-size: 1.6em;
-	padding-left: 10%;
-	padding-right: 10%;
-	
-}
-
-.titre p
-{
-	font-size: 0.5em;
-}
-.boutoninfos, .carousel-indicators
-{
-	visibility: hidden;
-}
-.carousel-control.next {
-   
-    font-size: 20px;
-    height: 40px;
-    border-bottom-left-radius: 40px;
-    border-top-left-radius: 40px;
-    width: 20px; 
-}
-.carousel-control.prev 
-{
-   
-    font-size: 20px;
-    height: 40px;
-    border-bottom-right-radius: 40px;
-    border-top-right-radius: 40px;
-    width: 20px;
-   
-}
-
-header
-{
-	display: flex;
-	flex-direction: column;
-	background-color: white;
-	align-items: center;
-	justify-content: space-between;
-	height: 120px;
-	padding: 10px;
-
-}
-
-#menu a
-{
-    font-size: 0.9em;
-}
-
-#menu a:hover
-{
-    border-top: 2px solid #5CADD3;
-    padding-top: 7px;
-
-}
-
-.ligne 
-{
-   
-    width: 28%
-
-}
-
-#circle
-{
-	width: 12px;
-	height: 12px;
-  	margin-top: -27px;
-  	
-} 
-
-#description_services 
-{
-	display: flex;
-	flex-direction: column;
-	justify-content: flex-start;
-	align-items: center;
-	padding-left: 0px;
-	padding-right: 0px;
-	padding-bottom: 2%;
-	
-
-}
-
-.liste_services
-{
-	display: flex;
-	margin-right: 10%;
-	margin-left: 6%;
-}
-
-
-}
-
-
-

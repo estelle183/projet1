@@ -1,261 +1,229 @@
-	<!DOCTYPE html>
-	<html lang="fr">
-	    
-	    <head>
-	        <meta charset="utf-8" />
-	        <title>WebAgency: création de site internet moderne</title>
-	        <link rel="stylesheet" href="style.css" />
-	       	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.10/css/all.css" integrity="sha384-+d0P83n9kaQMCwj8F4RJB66tzIwOKmrdb46+porD/OvrJ+37WqIM7UoBtwHO6Nlg" crossorigin="anonymous">
-	 
-	    </head>
-	<body>
-	   
-	   <!-- Header -->
+<!DOCTYPE html>
+<html lang="fr">
 
-	   	<header>
-	   		<img src="images/logo.png" alt="Logo" id="logo" />
-	   		
-	   		<nav id="menu"> <!-- Menu de navigation avec liens-->
-	   			<ul>
-	   				<li><a href="#">Accueil</a></li>
-	   				<li><a href="#services">Services</a></li>
-	   				<li><a href="#projets">Projets</a></li>
-	   				<li><a href="#contact">Contact</a></li>
-	   			</ul>
-	   		</nav>
-	   	</header>
+<head>
+    <meta charset="utf-8" />
+    <title>WebAgency: création de site internet moderne</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.10/css/all.css" integrity="sha384-+d0P83n9kaQMCwj8F4RJB66tzIwOKmrdb46+porD/OvrJ+37WqIM7UoBtwHO6Nlg" crossorigin="anonymous">
+</head>
 
-	   	<!-- Section Accueil -->
+<body>
+    <!-- Header -->
+    <header>
+        <img src="images/logo.png" alt="Logo" id="logo" />
+        <nav id="menu">
+            <!-- Menu de navigation avec liens-->
+            <ul>
+                <li><a href="#">Accueil</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#projets">Projets</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <!-- Section Accueil -->
+    <section id="section_accueil">
+        <div class="carousel">
+            <div class="carousel-inner">
+                <div class="slogan">
+                    <h1><span>WEBAGENCY </span>: L'AGENCE DE TOUS VOS PROJETS !</h1>
+                    <h2>Vous avez un projet web ? La WebAgency vous aide à le réaliser !</h2>
+                    <br />
+                    <a href="#projets" class="boutoninfos">Plus d'infos</a>
+                </div>
+                <input class="carousel-open" type="radio" id="carousel-1" name="carousel" aria-hidden="true" hidden="" checked="checked">
+                <div class="carousel-item">
+                    <img src="images/slider/bg1.jpg" alt="Image fille">
+                </div>
+                <input class="carousel-open" type="radio" id="carousel-2" name="carousel" aria-hidden="true" hidden="">
+                <div class="carousel-item">
+                    <img src="images/slider/bg2.jpg" alt="Image garçon">
+                </div>
+                <label for="carousel-2" class="carousel-control next control-1"><i class="fas fa-angle-right"></i></label>
+                <label for="carousel-1" class="carousel-control prev control-2"><i class="fas fa-angle-left"></i></label>
+                <label for="carousel-2" class="carousel-control prev control-1"><i class="fas fa-angle-left"></i></label>
+                <label for="carousel-1" class="carousel-control next control-2"><i class="fas fa-angle-right"></i></label>
+                <ol class="carousel-indicators">
+                    <li>
+                        <label for="carousel-1" class="carousel-bullet">•</label>
+                    </li>
+                    <li>
+                        <label for="carousel-2" class="carousel-bullet">•</label>
+                    </li>
+                </ol>
+            </div>
+        </div>
+    </section>
+    <!-- Section Nos services -->
+    <section id="section_services">
+        <div class="titre">
+            <h1 id="services">NOS SERVICES</h1>
+            <hr class="ligne" />
+            <div id="circle"></div>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+        </div>
+        <div id="description_services">
+            <figure class="feature">
+                <img src="images/main-feature.png" alt="écran" id="ecran">
+            </figure>
+            <ul class="description_services">
+                <li class="liste_services">
+                    <div class="icone_services">
+                        <i class="fas fa-chart-line"></i>
+                        <i class="fas fa-circle"></i>
+                    </div>
+                    <div class="texte_description">
+                        <h2>UX design</h2>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat</p>
+                    </div>
+                </li>
+                <li class="liste_services">
+                    <div class="icone_services">
+                        <i class="fas fa-cubes"></i>
+                        <i class="fas fa-circle"></i>
+                    </div>
+                    <div class="texte_description">
+                        <h2>UI design</h2>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat</p>
+                    </div>
+                </li>
+                <li class="liste_services">
+                    <div class="icone_services">
+                        <i class="fas fa-chart-pie"></i>
+                        <i class="fas fa-circle"></i>
+                    </div>
+                    <div class="texte_description">
+                        <h2>SEO</h2>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat</p>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </section>
+    <!-- Section Nos projets -->
+    <section id="section_projets">
+        <div class="titre">
+            <h1 id="projets">NOS PROJETS</h1>
+            <hr class="ligne" />
+            <div id="circle"></div>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+        </div>
+        <nav id="menu_projets">
+            <ul>
+                <li><a href="#" class="allWorks_title">All Works</a><i class="fas fa-caret-down"></i></li>
+                <li><a href="#" class="Creative_title">Creative</a><i class="fas fa-caret-down"></i></li>
+                <li><a href="#" class="Corporate_title">Corporate</a><i class="fas fa-caret-down"></i></li>
+                <li><a href="#" class="Portfolio_title">Portfolio</a><i class="fas fa-caret-down"></i></li>
+            </ul>
+        </nav>
+        <div class="portfolio">
+            <figure class="imgPortfolio">
+                <img src="images/portfolio/01.jpg" alt="lunettes" id="lunettes" />
+                <figcaption>
+                    <h3>Lorem ipsum</h3>
+                    <p>Lorem ipsum dolor sit amet</p>
+                    <div class="icone_projets">
+                        <i class="fas fa-eye"></i>
+                    </div>
+                </figcaption>
+            </figure>
+            <figure class="imgPortfolio">
+                <img src="images/portfolio/02.jpg" alt="lapin rose" id="lapinRose" />
+                <figcaption>
+                    <h3>Lorem ipsum</h3>
+                    <p>Lorem ipsum dolor sit amet</p>
+                    <div class="icone_projets">
+                        <i class="fas fa-eye"></i>
+                    </div>
+                </figcaption>
+            </figure>
+            <figure class="imgPortfolio">
+                <img src="images/portfolio/03.jpg" alt="Pompadour" id="pompadour" />
+                <figcaption>
+                    <h3>Lorem ipsum</h3>
+                    <p>Lorem ipsum dolor sit amet</p>
+                    <div class="icone_projets">
+                        <i class="fas fa-eye"></i>
+                    </div>
+                </figcaption>
+            </figure>
+            <figure class="imgPortfolio">
+                <img src="images/portfolio/04.jpg" alt="cahier" id="cahier" />
+                <figcaption>
+                    <h3>Lorem ipsum</h3>
+                    <p>Lorem ipsum dolor sit amet</p>
+                    <div class="icone_projets">
+                        <i class="fas fa-eye"></i>
+                    </div>
+                </figcaption>
+            </figure>
+            <figure class="imgPortfolio">
+                <img src="images/portfolio/05.jpg" alt="shopping" id="shopping" />
+                <figcaption>
+                    <h3>Lorem ipsum</h3>
+                    <p>Lorem ipsum dolor sit amet</p>
+                    <div class="icone_projets">
+                        <i class="fas fa-eye"></i>
+                    </div>
+                </figcaption>
+            </figure>
+            <figure class="imgPortfolio">
+                <img src="images/portfolio/06.jpg" alt="city" id="city" />
+                <figcaption>
+                    <h3>Lorem ipsum</h3>
+                    <p>Lorem ipsum dolor sit amet</p>
+                    <div class="icone_projets">
+                        <i class="fas fa-eye"></i>
+                    </div>
+                </figcaption>
+            </figure>
+            <figure class="imgPortfolio">
+                <img src="images/portfolio/07.jpg" alt="fusée" id="fusée" />
+                <figcaption>
+                    <h3>Lorem ipsum</h3>
+                    <p>Lorem ipsum dolor sit amet</p>
+                    <div class="icone_projets">
+                        <i class="fas fa-eye"></i>
+                    </div>
+                </figcaption>
+            </figure>
+            <figure class="imgPortfolio">
+                <img src="images/portfolio/08.jpg" alt="bureau" id="bureau" />
+                <figcaption>
+                    <h3>Lorem ipsum</h3>
+                    <p>Lorem ipsum dolor sit amet</p>
+                    <div class="icone_projets">
+                        <i class="fas fa-eye"></i>
+                    </div>
+                </figcaption>
+            </figure>
+        </div>
+    </section>
+    <!-- Section Contact -->
+    <section id="section_contact">
+        <div id="formulaire">
+            <h1>Contact Info</h1>
+            <h2>WebAgency SAS</h2>
+            <p>25 rue d'Hauteville 75010 Paris
+                <br>Tel : 01 02 03 04 05</p>
+            <form id="form_contact" method="post" action="traitement.php">
+                <p>
+                    <input type="text" name="NOM" id="nom" size="40" placeholder="NOM" required />
+                    <br>
+                    <input type="email" name="email" id="email" size="40" placeholder="Email" required />
+                    <br>
+                    <input type="text" name="Sujet" id="Sujet" size="40" placeholder="Sujet" required />
+                    <br>
+                    <textarea name="Message" id="Message" rows="10" cols="38" placeholder="Message" required></textarea>
+                    <br>
+                    <input type="submit" value="Envoyer" style="width: 150px; height: 35px; color: white; border-radius: 5px; background-color: #5CADD3; margin-bottom: 15px; margin-left: 10px; border-bottom: solid #4494BB;" />
+                </p>
+            </form>
+        </div>
+        <div id=map>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d5248.300405043677!2d2.3454465978166743!3d48.874413115021255!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47e66e145cb52f15%3A0x4d3ec41b2cadff0!2s25+Rue+d&#39;Hauteville%2C+75010+Paris!5e0!3m2!1sfr!2sfr!4v1523544806579" width=1 00%; height=6 00px; frameborder="0" style="border:0" allowfullscreen></iframe>
+        </div>
+</body>
 
-	<section id="section_accueil">
-
-				<div class="carousel">
-	    <div class="carousel-inner">
-	    	<div class="slogan">
-					<h1><span>WEBAGENCY </span>: L'AGENCE DE TOUS VOS PROJETS !</h1>
-				<h2>Vous avez un projet web ? La WebAgency vous aide à le réaliser !</h2><br />
-				<a href="#projets" class="boutoninfos">Plus d'infos</a>
-	        </div>
-	        <input class="carousel-open" type="radio" id="carousel-1" name="carousel" aria-hidden="true" hidden="" checked="checked">
-	        <div class="carousel-item">
-	            <img src="images/slider/bg1.jpg" alt="Image fille">
-				</div>
-	        <input class="carousel-open" type="radio" id="carousel-2" name="carousel" aria-hidden="true" hidden="">
-	        <div class="carousel-item">
-	            <img src="images/slider/bg2.jpg" alt="Image garçon">
-	        </div>
-	    
-	        
-	        <label for="carousel-2" class="carousel-control next control-1"><i class="fas fa-angle-right"></i></label>
-	        <label for="carousel-1" class="carousel-control prev control-2"><i class="fas fa-angle-left"></i></label>
-	        
-	        <label for="carousel-2" class="carousel-control prev control-1"><i class="fas fa-angle-left"></i></label>
-	        <label for="carousel-1" class="carousel-control next control-2"><i class="fas fa-angle-right"></i></label>
-	        <ol class="carousel-indicators">
-	            <li>
-	                <label for="carousel-1" class="carousel-bullet">•</label>
-	            </li>
-	            <li>
-	                <label for="carousel-2" class="carousel-bullet">•</label>
-	            </li>
-	        </ol>
-	    </div>
-	</div>
-
-	</section>
-
-	    
-		<!-- Section Nos services -->
-
-		<section id="section_services">
-			<div class="titre">
-				<h1 id="services">NOS SERVICES</h1>
-				<hr class="ligne"/>
-				<div id="circle"></div>
-				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-			</div>
-
-
-
-			<div id="description_services">
-				<figure class="feature">
-					<img src="images/main-feature.png" alt="écran" id="ecran">
-				</figure>
-				<ul class="description_services">
-					<li class="liste_services">
-						<div class="icone_services">
-							<i class="fas fa-chart-line"></i>
-						<i class="fas fa-circle"></i>
-						</div>
-						<div class="texte_description">
-						<h2>UX design</h2>
-						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat</p>
-					</div>
-				</li>
-				<li class="liste_services">
-						<div class="icone_services">
-							<i class="fas fa-cubes"></i>
-						<i class="fas fa-circle"></i>
-						</div>
-						<div class="texte_description">
-						<h2>UI design</h2>
-						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat</p>
-					</div>
-				</li>
-				<li class="liste_services">
-						<div class="icone_services">
-							<i class="fas fa-chart-pie"></i>
-						<i class="fas fa-circle"></i>
-						</div>
-					<div class="texte_description">
-						<h2>SEO</h2>
-						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat</p>
-					</div>
-				</li>
-			</ul>
-		</div>
-	</section>
-
-		<!-- Section Nos projets -->
-
-		<section id="section_projets">
-			<div class="titre">
-				<h1 id="projets">NOS PROJETS</h1>
-				<hr class="ligne"/>
-				<div id="circle"></div>
-				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-			</div>	
-			<nav id="menu_projets">
-				<ul>
-					<li><a href="#" class="allWorks_title">All Works</a><i class="fas fa-caret-down"></i></li>
-					<li><a href="#" class="Creative_title">Creative</a><i class="fas fa-caret-down"></i></li>
-					<li><a href="#" class="Corporate_title">Corporate</a><i class="fas fa-caret-down"></i></li>
-					<li><a href="#" class="Portfolio_title">Portfolio</a><i class="fas fa-caret-down"></i></li>
-				</ul>
-			</nav>
-
-			<div class="portfolio">
-
-	  			<figure class="imgPortfolio">
-				<img src="images/portfolio/01.jpg" alt="lunettes" id="lunettes"/>
-					<figcaption>
-						<h3>Lorem ipsum</h3>
-						<p>Lorem ipsum dolor sit amet</p>
-							<div class="icone_projets">
-							<i class="fas fa-eye"></i>
-							</div>
-					</figcaption>
-				</figure>
-
-				<figure class="imgPortfolio">
-				<img src="images/portfolio/02.jpg" alt="lapin rose" id="lapinRose" />
-					<figcaption>
-					<h3>Lorem ipsum</h3>
-					<p>Lorem ipsum dolor sit amet</p>
-						<div class="icone_projets">
-						<i class="fas fa-eye"></i>
-						</div>
-					</figcaption>
-				</figure>
-
-				<figure class="imgPortfolio">
-				<img src="images/portfolio/03.jpg" alt="Pompadour" id="pompadour" />
-					<figcaption>
-					<h3>Lorem ipsum</h3>
-					<p>Lorem ipsum dolor sit amet</p>
-						<div class="icone_projets">
-						<i class="fas fa-eye"></i>
-						</div>
-					</figcaption>
-				</figure>
-	      
-				<figure class="imgPortfolio">
-				<img src="images/portfolio/04.jpg" alt="cahier" id="cahier" />
-					<figcaption>
-					<h3>Lorem ipsum</h3>
-					<p>Lorem ipsum dolor sit amet</p>
-						<div class="icone_projets">
-						<i class="fas fa-eye"></i>
-						</div>
-					</figcaption>
-				</figure>
-	      
-				<figure class="imgPortfolio">
-				<img src="images/portfolio/05.jpg" alt="shopping" id="shopping" />
-					<figcaption>
-					<h3>Lorem ipsum</h3>
-					<p>Lorem ipsum dolor sit amet</p>
-						<div class="icone_projets">
-						<i class="fas fa-eye"></i>
-						</div>
-					</figcaption>
-				</figure>
-
-				<figure class="imgPortfolio">
-				<img src="images/portfolio/06.jpg" alt="city" id="city" />
-					<figcaption>
-					<h3>Lorem ipsum</h3>
-					<p>Lorem ipsum dolor sit amet</p>
-						<div class="icone_projets">
-						<i class="fas fa-eye"></i>
-						</div>
-					</figcaption>
-				</figure>
-	      
-				<figure class="imgPortfolio">
-				<img src="images/portfolio/07.jpg" alt="fusée" id="fusée" />
-					<figcaption>
-					<h3>Lorem ipsum</h3>
-					<p>Lorem ipsum dolor sit amet</p>
-						<div class="icone_projets">
-						<i class="fas fa-eye"></i>
-						</div>
-					</figcaption>
-				</figure>
-
-				<figure class="imgPortfolio">
-				<img src="images/portfolio/08.jpg" alt="bureau" id="bureau" />
-					<figcaption>
-					<h3>Lorem ipsum</h3>
-					<p>Lorem ipsum dolor sit amet</p>
-						<div class="icone_projets">
-						<i class="fas fa-eye"></i>
-						</div>
-					</figcaption>
-				</figure>
-
-			</div>
-		</section>
-
-		<!-- Section Contact -->
-
-		<section id="section_contact">
-			<div id=map>
-				<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d5248.300405043677!2d2.3454465978166743!3d48.874413115021255!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47e66e145cb52f15%3A0x4d3ec41b2cadff0!2s25+Rue+d&#39;Hauteville%2C+75010+Paris!5e0!3m2!1sfr!2sfr!4v1523544806579" width= 100%; height= 600px; frameborder="0" style="border:0" allowfullscreen></iframe>
-			</div>
-			<div id="formulaire">
-				<h1 id="contact">Contact Info</h1>
-				<h2>WebAgency SAS</h2>
-				<p>25 rue d'Hauteville 75010 Paris
-					<br>Tel : 01 02 03 04 05</p>
-				</div>
-
-				<form method="post" action="traitement.php">
-					<p>
-						<input type="text" name="NOM" id="nom" placeholder="NOM" required />
-						<br>
-						<input type="email" name="email" id="email" placeholder="Email" required />
-						<br>
-						<input type="text" name="Sujet" id="Sujet" placeholder="Sujet" required />
-						<br>
-						<textarea name="Message" id="Message" placeholder="Message" required></textarea>
-						<br>
-						<input type="submit" value="Envoyer" style="width: 150px; height: 35px; color: white; border-radius: 5px; background-color: #5CADD3; margin-bottom: 15px; margin-left: 10px; border-bottom: solid #4494BB;" />
-					</p>
-				</form>
-
-
-
-
-	    </body>
-	</html>
+</html>
