@@ -41,7 +41,7 @@ body {
 }
 
 .titre p {
-    font-size: 0.4em;
+    font-size: 0.45em;
     color: #717479;
 }
 
@@ -53,6 +53,10 @@ header {
     padding: 25px;
     width: auto;
 }
+
+
+
+
 
 
 
@@ -87,6 +91,10 @@ header {
 
 
 
+
+
+
+
 /* --------Navigation-------- */
 
 #menu ul {
@@ -104,22 +112,28 @@ header {
     color: #505050;
 }
 
-#menu a:hover
+
+
+
 /* Apparition du trait au-dessus au survol */
 
-{
+#menu a:hover {
     border-top: 3px solid #5CADD3;
     padding-top: 10px;
 }
 
 
 
+
+
+
+
 /* --------Section Accueil-------- */
 
-.slogan
+
 /*Texte sur le carousel*/
 
-{
+.slogan {
 
     width: 36%;
     font-size: 1.4em;
@@ -142,10 +156,12 @@ header {
     font-weight: normal;
 }
 
-.boutoninfos
+
+
+
 /* Bouton infos cliquable avec lien section "Nos projets" */
 
-{
+.boutoninfos {
 
     background: #5cadd3;
     color: white;
@@ -157,6 +173,10 @@ header {
     border-radius: 2px;
     box-shadow: 0px 4px 0px #4A98BD;
 }
+
+
+
+
 
 
 
@@ -277,6 +297,10 @@ header {
 
 
 
+
+
+
+
 /* --------Section Services-------- */
 
 #description_services {
@@ -340,13 +364,19 @@ header {
     text-align: justify;
 }
 
+.texte_description span {
+  font-family: 'robotobold', sans-serif;
+}
+
+
+
 
 
 /* --------Section Projets-------- */
 
 #section_projets {
     background-color: #F5F5F5;
-    padding-bottom: 30px;
+    padding-bottom: 80px;
 }
 
 
@@ -359,17 +389,17 @@ header {
     margin-bottom: 40px;
 }
 
-.allWorks_title {
+.allWorks_btn {
     border-top-left-radius: 8px;
     border-bottom-left-radius: 8px;
 }
 
-.Portfolio_title {
+.portfolio_btn {
     border-top-right-radius: 8px;
     border-bottom-right-radius: 8px;
 }
 
-#menu_projets a {
+#menu_projets label {
     font-size: 1.1em;
     text-decoration: none;
     color: #505050;
@@ -385,39 +415,68 @@ header {
     justify-content: center;
 }
 
-.fa-caret-down
+
+
+
 /*--- flèche bleue invisible---*/
 
-{
+.fa-caret-down {
     color: #4A98BD;
     font-size: 1.9em;
     visibility: hidden;
     margin-top: -7px;
 }
 
-#menu_projets a:hover
+
+
+
 /*---Modification couleur de fond et de la police au survol---*/
 
-{
+#menu_projets label:hover {
 
     background-color: #5dadd3;
     color: white;
     box-shadow: 0px 5px 0px #4A98BD;
 }
 
-#menu_projets a:hover+.fa-caret-down
+
+
+
 /*---Rendre visible la flèche au survol---*/
 
-{
+#menu_projets label:hover+.fa-caret-down {
     visibility: visible;
 }
 
-.portfolio {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    margin-left: 10px;
-    margin-right: 10px;
+#menu_projets {
+    text-align: center;
+}
+
+.projets {
+    display: inline-block;
+}
+
+
+
+/*---Boutons cliquables Portfolio---*/
+
+#btn1:checked~.projets {
+    display: inline-block;
+}
+
+#btn2:checked~.corporate,
+#btn2:checked~.portfolio {
+    display: none;
+}
+
+#btn3:checked~.creative,
+#btn3:checked~.portfolio {
+    display: none;
+}
+
+#btn4:checked~.creative,
+#btn4:checked~.corporate {
+    display: none;
 }
 
 .icone_projets {
@@ -452,6 +511,10 @@ header {
     background-color: rgba(0, 0, 0, 0);
 }
 
+
+
+/*---Apparition bulle sur image au survol---*/
+
 figcaption {
     position: absolute;
     background: rgba(0, 0, 0, 0.6);
@@ -470,13 +533,19 @@ figcaption {
 }
 
 figcaption h3 {
-    font-size: 1.2em;
+    font-size: 1.1em;
+    text-align: left;
 }
 
 figcaption p {
     font-size: 0.9em;
     color: white;
+    text-align: left;
 }
+
+
+
+/* --------Section Contact-------- */
 
 #formulaire {
     width: 300px;
@@ -516,7 +585,11 @@ textarea {
     padding-left: 10px;
 }
 
-.google {
+
+
+/*---Fond bleu sur la carte---*/
+
+.fond_carte {
 
     background-color: #298EF2;
     height: 600px;
@@ -526,13 +599,17 @@ textarea {
     opacity: 0.8;
 }
 
+
+
+/* --------Footer-------- */
+
 #menu2 ul {
     list-style-type: none;
 }
 
 
 #menu2 a {
-    font-size: 0.9em;
+    font-size: 1em;
     text-decoration: none;
     color: #505050;
 }
@@ -544,33 +621,36 @@ textarea {
     color: #5CADD3;
 }
 
+footer {
+
+    display: flex;
+    justify-content: space-between;
+    margin: 10px 40px 0px 40px;
+    background-image: url("images/cta2-img.png");
+    background-repeat: no-repeat;
+    background-position: bottom center;
+    background-size: contain;
+    height: 300px;
+
+}
+
+.coordonnees {
+
+    flex-direction: column;
+    margin-top: 15px;
+    
+}
 
 
+.coordonnees span {
+    font-family: 'robotoregular', sans-serif;
+    font-size: 1.1em;
+    color: #505050
+}
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+footer i {
+    color: #5dadd3;
+}
 
 
 
@@ -582,6 +662,10 @@ textarea {
         padding-top: 5%;
         font-size: 1.3em;
         width: 38%;
+    }
+
+    footer{
+      height: 250px;
     }
 }
 
@@ -617,6 +701,10 @@ textarea {
         display: flex;
         margin-right: 10%;
         margin-left: 6%;
+    }
+
+    footer{
+      height: 200px;
     }
 }
 
@@ -732,15 +820,23 @@ textarea {
     }
 
     #formulaire {
-    width: 80%;
-    background-color: #DAE5F0;
-    opacity: 0.9;
-    position: relative;
+        width: 80%;
+        background-color: #DAE5F0;
+        opacity: 0.9;
+        position: relative;
 
-    margin-left: 9%;
-    margin-top: 6%;
-    margin-bottom: 6%;
-    padding: 10px 10px 10px 10px;
-    z-index: 10;
-}
+        margin-left: 9%;
+        margin-top: 6%;
+        margin-bottom: 6%;
+        padding: 10px 10px 10px 10px;
+        z-index: 10;
+    }
+
+    #menu2 {
+        display: none;
+    }
+
+    footer{
+      height: 150px;
+    }
 }
