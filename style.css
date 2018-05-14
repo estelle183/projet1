@@ -59,6 +59,7 @@ header {
 
 
 
+
 /* Mise en place de la ligne séparatrice et bulle bleue au centre sections Services et Projets */
 
 .ligne {
@@ -81,6 +82,7 @@ header {
     margin-top: -30px;
     position: relative;
 }
+
 
 
 
@@ -109,6 +111,7 @@ header {
     border-top: 3px solid #5CADD3;
     padding-top: 10px;
 }
+
 
 
 /* --------Section Accueil-------- */
@@ -154,6 +157,7 @@ header {
     border-radius: 2px;
     box-shadow: 0px 4px 0px #4A98BD;
 }
+
 
 
 /* --------Carousel-------- */
@@ -272,6 +276,7 @@ header {
 }
 
 
+
 /* --------Section Services-------- */
 
 #description_services {
@@ -334,6 +339,7 @@ header {
     color: #717479;
     text-align: justify;
 }
+
 
 
 /* --------Section Projets-------- */
@@ -473,30 +479,71 @@ figcaption p {
 }
 
 #formulaire {
-    background-color: #EAF3FC;
+    width: 300px;
+    background-color: #DAE5F0;
     opacity: 0.9;
     position: absolute;
-    margin-left: 70%;
-    margin-top: 10%;
+    margin-left: 65%;
+    margin-top: 6%;
     padding: 10px 10px 10px 10px;
+    z-index: 10;
 }
 
-#formulaire h1,
-h2 {
+#formulaire h1 {
     font-family: 'robotobold', sans-serif;
+    margin-top: 6px;
 }
 
 #formulaire p {
     font-family: 'robotoregular', sans-serif;
-}
-
-#formulaire h2,
-p {
     color: #505050;
-    font-size: 0.9em;
+    font-size: 0.8em;
 }
 
-#form_contact p {}
+#formulaire span {
+    font-family: 'robotobold', sans-serif;
+    color: #505050;
+    font-size: 1em;
+}
+
+#form_contact input,
+textarea {
+    width: 92%;
+    margin-left: 2%;
+    margin-right: 2%;
+    margin-bottom: 10px;
+    font-size: 0.8em;
+    padding-left: 10px;
+}
+
+.google {
+
+    background-color: #298EF2;
+    height: 600px;
+}
+
+.map {
+    opacity: 0.8;
+}
+
+#menu2 ul {
+    list-style-type: none;
+}
+
+
+#menu2 a {
+    font-size: 0.9em;
+    text-decoration: none;
+    color: #505050;
+}
+
+#menu2 a:hover
+/* Apparition du trait au-dessus au survol */
+
+{
+    color: #5CADD3;
+}
+
 
 
 
@@ -623,17 +670,37 @@ p {
         background-color: white;
         align-items: center;
         justify-content: space-between;
-        height: 120px;
-        padding: 10px;
+        height: auto;
+        padding-top: 10px;
+    }
+    #menu {
+        width: 80%;
+    }
+    #menu ul {
+        list-style-type: none;
+        display: inline;
+    }
+
+    #menu li {
+        border-top: 2px white solid;
+        margin-right: 0px;
+        text-align: center;
+        padding-top: 9px;
+        padding-bottom: 9px;
+        color: #505050;
+        background-color: #E0DCDC;
     }
 
     #menu a {
-        font-size: 0.9em;
+        font-size: 1.2em;
+    }
+
+    #menu li:hover {
+        background-color: #5dadd3;
     }
 
     #menu a:hover {
-        border-top: 2px solid #5CADD3;
-        padding-top: 7px;
+        border: none;
     }
 
     .ligne {
@@ -644,7 +711,8 @@ p {
     #circle {
         width: 12px;
         height: 12px;
-        margin-top: -27px;
+        margin-top: -24px;
+        border: 4px solid white;
     }
 
     #description_services {
@@ -662,4 +730,17 @@ p {
         margin-right: 10%;
         margin-left: 6%;
     }
+
+    #formulaire {
+    width: 80%;
+    background-color: #DAE5F0;
+    opacity: 0.9;
+    position: relative;
+
+    margin-left: 9%;
+    margin-top: 6%;
+    margin-bottom: 6%;
+    padding: 10px 10px 10px 10px;
+    z-index: 10;
+}
 }

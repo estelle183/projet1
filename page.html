@@ -18,7 +18,7 @@
                 <li><a href="#">Accueil</a></li>
                 <li><a href="#services">Services</a></li>
                 <li><a href="#projets">Projets</a></li>
-                <li><a href="#contact">Contact</a></li>
+                <li><a href="#formulaire">Contact</a></li>
             </ul>
         </nav>
     </header>
@@ -204,26 +204,34 @@
     <section id="section_contact">
         <div id="formulaire">
             <h1>Contact Info</h1>
-            <h2>WebAgency SAS</h2>
-            <p>25 rue d'Hauteville 75010 Paris
+            <p><span>WebAgency SAS</span>
+                <br>25 rue d'Hauteville 75010 Paris
                 <br>Tel : 01 02 03 04 05</p>
             <form id="form_contact" method="post" action="traitement.php">
-                <p>
-                    <input type="text" name="NOM" id="nom" size="40" placeholder="NOM" required />
-                    <br>
-                    <input type="email" name="email" id="email" size="40" placeholder="Email" required />
-                    <br>
-                    <input type="text" name="Sujet" id="Sujet" size="40" placeholder="Sujet" required />
-                    <br>
-                    <textarea name="Message" id="Message" rows="10" cols="38" placeholder="Message" required></textarea>
-                    <br>
-                    <input type="submit" value="Envoyer" style="width: 150px; height: 35px; color: white; border-radius: 5px; background-color: #5CADD3; margin-bottom: 15px; margin-left: 10px; border-bottom: solid #4494BB;" />
-                </p>
+                <input type="text" name="NOM" id="nom" placeholder="NOM" required />
+                <br>
+                <input type="email" name="email" id="email" placeholder="Email" required />
+                <br>
+                <input type="text" name="Sujet" id="Sujet" placeholder="Sujet" required />
+                <br>
+                <textarea name="Message" id="Message" rows="10" placeholder="Message" required></textarea>
+                <br>
+                <input type="submit" value="Envoyer" style="width: 140px; height: 35px; color: white; border-radius: 5px; background-color: #5CADD3; margin-bottom: 15px; margin-top: 5px; border-bottom: solid #4494BB; font-size: 0.9em" />
             </form>
         </div>
-        <div id=map>
-            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d5248.300405043677!2d2.3454465978166743!3d48.874413115021255!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47e66e145cb52f15%3A0x4d3ec41b2cadff0!2s25+Rue+d&#39;Hauteville%2C+75010+Paris!5e0!3m2!1sfr!2sfr!4v1523544806579" width=1 00%; height=6 00px; frameborder="0" style="border:0" allowfullscreen></iframe>
+        <div class="google">
+            <iframe class="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2624.2214246080334!2d2.347636915677772!3d48.873055307627986!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47e66e145ccb3091%3A0x9495beee8c96ec27!2s25+Rue+d&#39;Hauteville%2C+75010+Paris!5e0!3m2!1sfr!2sfr!4v1525952908611" width="100%" height="600" frameborder="0" style="border:0" allowfullscreen></iframe>
         </div>
+        <footer>
+            <nav id="menu2">
+                <!-- Menu de navigation avec liens-->
+                <ul>
+                    <li><a href="#">Accueil</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#projets">Projets</a></li>
+                    <li><a href="#formulaire">Contact</a></li>
+                </ul>
+            </nav>
 </body>
 
 </html>
