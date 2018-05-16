@@ -64,6 +64,9 @@ header {
 
 
 
+
+
+
 /* Mise en place de la ligne séparatrice et bulle bleue au centre sections Services et Projets */
 
 .ligne {
@@ -95,6 +98,9 @@ header {
 
 
 
+
+
+
 /* --------Navigation-------- */
 
 #menu ul {
@@ -115,12 +121,18 @@ header {
 
 
 
+
+
+
 /* Apparition du trait au-dessus au survol */
 
 #menu a:hover {
     border-top: 3px solid #5CADD3;
     padding-top: 10px;
 }
+
+
+
 
 
 
@@ -159,6 +171,9 @@ header {
 
 
 
+
+
+
 /* Bouton infos cliquable avec lien section "Nos projets" */
 
 .boutoninfos {
@@ -173,6 +188,9 @@ header {
     border-radius: 2px;
     box-shadow: 0px 4px 0px #4A98BD;
 }
+
+
+
 
 
 
@@ -208,7 +226,7 @@ header {
 .carousel-item img {
     display: block;
     height: auto;
-    max-width: 100%;
+    width: 100%;
 }
 
 .carousel-control.prev {
@@ -301,6 +319,9 @@ header {
 
 
 
+
+
+
 /* --------Section Services-------- */
 
 #description_services {
@@ -365,8 +386,11 @@ header {
 }
 
 .texte_description span {
-  font-family: 'robotobold', sans-serif;
+    font-family: 'robotobold', sans-serif;
 }
+
+
+
 
 
 
@@ -418,6 +442,9 @@ header {
 
 
 
+
+
+
 /*--- flèche bleue invisible---*/
 
 .fa-caret-down {
@@ -430,6 +457,9 @@ header {
 
 
 
+
+
+
 /*---Modification couleur de fond et de la police au survol---*/
 
 #menu_projets label:hover {
@@ -438,6 +468,9 @@ header {
     color: white;
     box-shadow: 0px 5px 0px #4A98BD;
 }
+
+
+
 
 
 
@@ -455,6 +488,9 @@ header {
 .projets {
     display: inline-block;
 }
+
+
+
 
 
 
@@ -513,6 +549,9 @@ header {
 
 
 
+
+
+
 /*---Apparition bulle sur image au survol---*/
 
 figcaption {
@@ -542,6 +581,9 @@ figcaption p {
     color: white;
     text-align: left;
 }
+
+
+
 
 
 
@@ -587,6 +629,9 @@ textarea {
 
 
 
+
+
+
 /*---Fond bleu sur la carte---*/
 
 .fond_carte {
@@ -597,7 +642,12 @@ textarea {
 
 .map {
     opacity: 0.8;
+    width: 100%;
+    height: 600px;
 }
+
+
+
 
 
 
@@ -614,10 +664,7 @@ textarea {
     color: #505050;
 }
 
-#menu2 a:hover
-/* Apparition du trait au-dessus au survol */
-
-{
+#menu2 a:hover {
     color: #5CADD3;
 }
 
@@ -631,14 +678,12 @@ footer {
     background-position: bottom center;
     background-size: contain;
     height: 300px;
-
 }
 
 .coordonnees {
 
     flex-direction: column;
     margin-top: 15px;
-    
 }
 
 
@@ -654,6 +699,9 @@ footer i {
 
 
 
+
+
+
 /* --------Responsive-------- */
 
 @media screen and (min-width: 992px) and (max-width: 1200px) {
@@ -664,8 +712,10 @@ footer i {
         width: 38%;
     }
 
-    footer{
-      height: 250px;
+
+
+    footer {
+        height: 250px;
     }
 }
 
@@ -703,8 +753,8 @@ footer i {
         margin-left: 6%;
     }
 
-    footer{
-      height: 200px;
+    footer {
+        height: 200px;
     }
 }
 
@@ -821,22 +871,303 @@ footer i {
 
     #formulaire {
         width: 80%;
-        background-color: #DAE5F0;
-        opacity: 0.9;
         position: relative;
-
         margin-left: 9%;
-        margin-top: 6%;
         margin-bottom: 6%;
-        padding: 10px 10px 10px 10px;
-        z-index: 10;
+    }
+
+    .fond_carte {
+        overflow: hidden;
+        padding-bottom: 56.25%;
+        position: relative;
+        >height: 0;
+    }
+
+    .fond_carte iframe {
+        left: 0;
+        top: 0;
+        height: 100%;
+        width: 100%;
+        position: absolute;
     }
 
     #menu2 {
         display: none;
     }
 
-    footer{
-      height: 150px;
+    footer {
+        height: 150px;
+    }
+}
+
+@media all and (max-device-width: 480px) {
+
+    body {
+        width: 100%;
+    }
+    #logo {
+        height: auto;
+        width: 750px;
+    }
+
+    .slogan {
+        width: 80%;
+        font-size: 1.5em;
+        padding-top: 0%;
+    }
+
+    .slogan span {
+        color: white;
+    }
+
+    .slogan h2 {
+        width: 50%;
+        font-size: 1.2em;
+    }
+
+    .titre {
+
+        font-size: 2.5em;
+        padding-left: 5%;
+        padding-right: 5%;
+    }
+
+    .titre p {
+        font-size: 0.9em;
+    }
+    .boutoninfos,
+    .carousel-indicators {
+        visibility: hidden;
+    }
+    .carousel-control.next {
+
+        font-size: 80px;
+        height: 160px;
+        border-bottom-left-radius: 160px;
+        border-top-left-radius: 160px;
+        width: 80px;
+    }
+    .carousel-control.prev {
+
+        font-size: 80px;
+        height: 160px;
+        border-bottom-right-radius: 160px;
+        border-top-right-radius: 160px;
+        width: 80px;
+    }
+
+    header {
+        display: flex;
+        flex-direction: column;
+        background-color: white;
+        align-items: center;
+        justify-content: space-between;
+        height: auto;
+        padding-top: 10px;
+    }
+    #menu {
+        width: 100%;
+    }
+    #menu ul {
+        list-style-type: none;
+        display: inline;
+    }
+
+    #menu li {
+        border-top: 2px white solid;
+        margin-right: 0px;
+        text-align: center;
+        padding-top: 9px;
+        padding-bottom: 9px;
+        color: #505050;
+        background-color: #E0DCDC;
+    }
+
+    #menu a {
+        font-size: 3.0em;
+    }
+
+    #menu li:hover {
+        background-color: #5dadd3;
+    }
+
+    #menu a:hover {
+        border: none;
+    }
+
+    .ligne {
+
+        width: 60%;
+        border-top-width: 4px;
+    }
+
+    #circle {
+        width: 30px;
+        height: 30px;
+        margin-top: -44px;
+        border: 8px solid white;
+    }
+
+    #description_services {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+        padding-left: 0px;
+        padding-right: 0px;
+        padding-bottom: 2%;
+    }
+
+    .feature img {
+        width: 750px;
+        height: auto;
+    }
+
+    .liste_services {
+        display: flex;
+        margin-right: 2%;
+        margin-left: 0%;
+    }
+
+    .fa-cubes,
+    .fa-chart-line,
+    .fa-chart-pie {
+
+        font-size: 3.6em;
+    }
+
+    .fa-circle {
+
+        font-size: 1.2em;
+    }
+
+    .icone_services {
+        width: 125px;
+        height: 125px;
+        border: 2px solid #bec0c4;
+        min-width: 125px;
+    }
+
+
+    .texte_description {
+
+        margin-left: 3%;
+    }
+
+    .texte_description h2 {
+        font-size: 2.2em;
+    }
+
+    .texte_description p {
+        font-size: 1.9em;
+    }
+
+    #menu_projets label {
+        font-size: 2.8em;
+    }
+
+    #menu_projets label:hover+.fa-caret-down {
+        visibility: hidden;
+    }
+
+    .imgPortfolio {
+
+        width: 800px;
+    }
+
+    figcaption {
+        height: 150px;
+        opacity: 0.6;
+        bottom: -15px;
+        transition: none
+    }
+
+    .imgPortfolio:hover figcaption {
+        opacity: 0.6;
+    }
+
+    figcaption h3 {
+        font-size: 2.1em;
+        margin-top: -3px;
+    }
+
+    figcaption p {
+        font-size: 1.9em;
+        margin-top: -25px;
+        max-width: 95%;
+    }
+
+    .icone_projets {
+        display: none;
+    }
+
+    .fa-eye {
+
+        font-size: 2.5em;
+    }
+
+
+    #formulaire {
+        width: 100%;
+        height: auto;
+        position: relative;
+        margin-left: 0%;
+        margin-top: 6%;
+        margin-bottom: 6%;
+    }
+
+    #formulaire h1 {
+        font-size: 3.0em;
+        margin-top: 3px;
+    }
+
+    #formulaire p {
+        font-size: 1.7em;
+    }
+
+    #formulaire span {
+        font-size: 1.7em;
+    }
+
+    #form_contact input,
+    textarea {
+        width: 90%;
+        margin-left: 2%;
+        margin-right: 2%;
+        margin-bottom: 10px;
+        font-size: 2.2em;
+        padding-left: 9px;
+    }
+
+    .fond_carte {
+        overflow: hidden;
+        padding-bottom: 56.25%;
+        position: relative;
+        >height: 0;
+    }
+
+    .fond_carte iframe {
+        left: 0;
+        top: 0;
+        height: 100%;
+        width: 100%;
+        position: absolute;
+    }
+
+    #menu2 {
+        display: none;
+    }
+
+    footer {
+        height: 150px;
+        background-image: none;
+    }
+
+    .social {
+        font-size: 3.6em;
+    }
+
+    .coordonnees {
+        font-size: 1.5em;
     }
 }
