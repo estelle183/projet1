@@ -42,17 +42,21 @@ body {
 
 .titre p {
     font-size: 0.45em;
-    color: #717479;
+    color: #898C91;
 }
 
 header {
 
-    justify-content: space-around;
-    background-color: white;
+    top: 0;
     display: flex;
-    padding: 25px;
-    width: auto;
+    justify-content: space-between;
+    background-color: white;
+    width: 100%;
+    z-index: 99;
+    padding: 20px;
+    position: fixed;
 }
+
 
 
 
@@ -74,21 +78,22 @@ header {
     border: none;
     border-top: solid;
     border-top-width: 2px;
-    color: #EBEBEB;
+    color: #EDEDED;
     text-align: center;
     width: 15%
 }
 
-#circle {
+.circle {
     width: 14px;
     height: 14px;
-    background-color: #5dadd3;
+    background-color: #43ADD8;
     border: 6px solid white;
     border-radius: 50%;
     margin: auto;
     margin-top: -30px;
     position: relative;
 }
+
 
 
 
@@ -109,17 +114,23 @@ header {
 }
 
 #menu li {
-    margin-right: 12px;
+    margin-right: 40px;
 }
 
 #menu a {
     font-size: 1.1em;
     text-decoration: none;
-    color: #505050;
+    color: #8B8B8B;
 }
 
+#menu {
 
+    margin-right: 8%;
+}
 
+#logo {
+    padding-left: 8%;
+}
 
 
 
@@ -127,9 +138,10 @@ header {
 /* Apparition du trait au-dessus au survol */
 
 #menu a:hover {
-    border-top: 3px solid #5CADD3;
-    padding-top: 10px;
+    border-top: 3px solid #60B9DE;
+    padding-top: 15px;
 }
+
 
 
 
@@ -158,7 +170,7 @@ header {
 }
 
 .slogan span {
-    color: #42a6ce;
+    color: #43ADD8;
 }
 
 .slogan h2 {
@@ -174,11 +186,12 @@ header {
 
 
 
+
 /* Bouton infos cliquable avec lien section "Nos projets" */
 
 .boutoninfos {
 
-    background: #5cadd3;
+    background: #43ADD8;
     color: white;
     font-family: 'robotoregular', sans-serif;
     font-size: 0.8em;
@@ -198,12 +211,13 @@ header {
 
 
 
+
 /* --------Carousel-------- */
 
 .carousel {
     position: relative;
     box-shadow: 0px 1px 6px rgba(0, 0, 0, 0.64);
-    margin-top: 26px;
+    margin-top: 80px;
 }
 
 .carousel-inner {
@@ -322,6 +336,7 @@ header {
 
 
 
+
 /* --------Section Services-------- */
 
 #description_services {
@@ -341,14 +356,14 @@ header {
 .fa-cubes,
 .fa-chart-line,
 .fa-chart-pie {
-    color: #5dadd3;
+    color: #43ADD8;
     position: relative;
     margin-top: 25%;
     font-size: 1.5em;
 }
 
 .fa-circle {
-    color: #5dadd3;
+    color: #43ADD8;
     background-color: #5dadd3;
     border-radius: 50%;
     position: relative;
@@ -361,7 +376,7 @@ header {
     width: 55px;
     height: 55px;
     border-radius: 50%;
-    border: 1px solid #bec0c4;
+    border: 1px solid #F5F5F5;
     margin-top: 30px;
     min-width: 55px;
     position: relative;
@@ -388,6 +403,7 @@ header {
 .texte_description span {
     font-family: 'robotobold', sans-serif;
 }
+
 
 
 
@@ -426,8 +442,8 @@ header {
 #menu_projets label {
     font-size: 1.1em;
     text-decoration: none;
-    color: #505050;
-    background-color: #E0DCDC;
+    color: #777B80;
+    background-color: #E5E5E5;
     padding: 15px;
     cursor: pointer;
 }
@@ -438,6 +454,7 @@ header {
     align-items: center;
     justify-content: center;
 }
+
 
 
 
@@ -460,14 +477,16 @@ header {
 
 
 
+
 /*---Modification couleur de fond et de la police au survol---*/
 
 #menu_projets label:hover {
 
-    background-color: #5dadd3;
+    background-color: #43ADD8;
     color: white;
-    box-shadow: 0px 5px 0px #4A98BD;
+    box-shadow: 0px 5px 0px #2F8CB1;
 }
+
 
 
 
@@ -488,6 +507,7 @@ header {
 .projets {
     display: inline-block;
 }
+
 
 
 
@@ -522,7 +542,7 @@ header {
     border: 2px solid white;
     min-width: 50px;
     text-align: center;
-    background-color: #5dadd3;
+    background-color: #2A91B5;
     position: relative;
     margin-left: 75%;
     bottom: 123px;
@@ -546,6 +566,7 @@ header {
     margin: 15px;
     background-color: rgba(0, 0, 0, 0);
 }
+
 
 
 
@@ -587,11 +608,12 @@ figcaption p {
 
 
 
+
 /* --------Section Contact-------- */
 
 #formulaire {
     width: 300px;
-    background-color: #DAE5F0;
+    background-color: #F1F6F8;
     opacity: 0.9;
     position: absolute;
     margin-left: 65%;
@@ -632,6 +654,7 @@ textarea {
 
 
 
+
 /*---Fond bleu sur la carte---*/
 
 .fond_carte {
@@ -651,6 +674,7 @@ textarea {
 
 
 
+
 /* --------Footer-------- */
 
 #menu2 ul {
@@ -661,11 +685,11 @@ textarea {
 #menu2 a {
     font-size: 1em;
     text-decoration: none;
-    color: #505050;
+    color: #777B80;
 }
 
 #menu2 a:hover {
-    color: #5CADD3;
+    color: #43ADD8;
 }
 
 footer {
@@ -677,7 +701,7 @@ footer {
     background-repeat: no-repeat;
     background-position: bottom center;
     background-size: contain;
-    height: 300px;
+    height: 320px;
 }
 
 .coordonnees {
@@ -690,12 +714,13 @@ footer {
 .coordonnees span {
     font-family: 'robotoregular', sans-serif;
     font-size: 1.1em;
-    color: #505050
+    color: #777B80
 }
 
 footer i {
-    color: #5dadd3;
+    color: #43ADD8;
 }
+
 
 
 
@@ -846,7 +871,7 @@ footer i {
         width: 28%
     }
 
-    #circle {
+    .circle {
         width: 12px;
         height: 12px;
         margin-top: -24px;
@@ -980,7 +1005,7 @@ footer i {
         padding-top: 9px;
         padding-bottom: 9px;
         color: #505050;
-        background-color: #E0DCDC;
+        background-color: #E5E5E5;
     }
 
     #menu a {
@@ -988,7 +1013,7 @@ footer i {
     }
 
     #menu li:hover {
-        background-color: #5dadd3;
+        background-color: #43ADD8;
     }
 
     #menu a:hover {
@@ -1001,7 +1026,7 @@ footer i {
         border-top-width: 4px;
     }
 
-    #circle {
+    .circle {
         width: 30px;
         height: 30px;
         margin-top: -44px;
