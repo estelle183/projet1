@@ -4,6 +4,8 @@
 <head>
     <meta charset="utf-8" />
     <title>WebAgency: création de sites internet modernes</title>
+    <meta name="description" content="WebAgency, Une agence web à Paris entièrement dédiée à la création de votre site web, sa promotion et la réussite de votre projet numérique." />
+    <meta name=viewport content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="style.css" />
     <link rel="shortcut icon" type="image/x-icon" href="images/ico/favicon.ico" />
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.10/css/all.css" integrity="sha384-+d0P83n9kaQMCwj8F4RJB66tzIwOKmrdb46+porD/OvrJ+37WqIM7UoBtwHO6Nlg" crossorigin="anonymous">
@@ -17,9 +19,9 @@
             <!-- Menu de navigation avec liens-->
             <ul>
                 <li><a href="#">Accueil</a></li>
-                <li><a href="#services">Services</a></li>
-                <li><a href="#projets">Projets</a></li>
-                <li><a href="#formulaire">Contact</a></li>
+                <li><a href="#section_services">Services</a></li>
+                <li><a href="#section_projets">Projets</a></li>
+                <li><a href="#section_contact">Contact</a></li>
             </ul>
         </nav>
     </header>
@@ -35,11 +37,12 @@
                 </div>
                 <input class="carousel-open" type="radio" id="carousel-1" name="carousel" hidden="" checked="checked">
                 <div class="carousel-item">
-                    <img src="images/slider/bg1.jpg" alt="Image fille">
+                    <img src="images/slider/bg1.jpg" alt="photo d'une petite fille">
                 </div>
+                <div class="barre"></div>
                 <input class="carousel-open" type="radio" id="carousel-2" name="carousel" hidden="">
                 <div class="carousel-item">
-                    <img src="images/slider/bg2.jpg" alt="Image garçon">
+                    <img src="images/slider/bg2.jpg" alt="photo d'un petit garçon">
                 </div>
                 <label for="carousel-2" class="carousel-control next control-1"><i class="fas fa-angle-right"></i></label>
                 <label for="carousel-1" class="carousel-control prev control-2"><i class="fas fa-angle-left"></i></label>
@@ -66,7 +69,7 @@
         </div>
         <div id="description_services">
             <figure class="feature">
-                <img src="images/main-feature.png" alt="écran" id="ecran">
+                <img src="images/main-feature.png" alt="image d'illustration représentant un écran d'ordinateur" id="ecran">
             </figure>
             <ul class="description_services">
                 <li class="liste_services">
@@ -111,6 +114,10 @@
             <p>Retrouvez tous les projets récents réalisés par la WebAgency. N'hésitez pas à nous contacter pour consulter la totalité de notre portfolio.</p>
         </div>
         <form id="menu_projets">
+            <input class="input" type="radio" name="btn" id="btn1" hidden="" checked="checked">
+            <input class="input" type="radio" name="btn" id="btn2" hidden="">
+            <input class="input" type="radio" name="btn" id="btn3" hidden="">
+            <input class="input" type="radio" name="btn" id="btn4" hidden="">
             <ul>
                 <li>
                     <label for="btn1" class="allWorks_btn">All Works</label><i class="fas fa-caret-down"></i></li>
@@ -121,15 +128,12 @@
                 <li>
                     <label for="btn4" class="portfolio_btn">Portfolio</label><i class="fas fa-caret-down"></i></li>
             </ul>
-            <input type="radio" name="btn" id="btn1" hidden="" checked="checked">
-            <input type="radio" name="btn" id="btn2" hidden="">
-            <input type="radio" name="btn" id="btn3" hidden="">
-            <input type="radio" name="btn" id="btn4" hidden="">
+            
             <div class="portfolio projets">
                 <figure class="imgPortfolio">
-                    <img src="images/portfolio/01.jpg" alt="lunettes" id="lunettes" />
+                    <img src="images/portfolio/01.jpg" alt="site internet d'un magasin de lunettes" id="lunettes" />
                     <figcaption>
-                        <h3>Big Nose Optique</h3>
+                        <h2>Big Nose Optique</h2>
                         <p>Création d'un site internet pour un magasin de vente de lunettes</p>
                         <div class="icone_projets">
                             <i class="fas fa-eye"></i>
@@ -139,9 +143,9 @@
             </div>
             <div class="creative projets">
                 <figure class="imgPortfolio">
-                    <img src="images/portfolio/02.jpg" alt="lapin rose" id="lapinRose" />
+                    <img src="images/portfolio/02.jpg" alt="logo du site Pink Bunny" id="lapinRose" />
                     <figcaption>
-                        <h3>Pink Bunny</h3>
+                        <h2>Pink Bunny</h2>
                         <p>Création d'une application mobile de jeux pour enfants</p>
                         <div class="icone_projets">
                             <i class="fas fa-eye"></i>
@@ -151,9 +155,9 @@
             </div>
             <div class="corporate projets">
                 <figure class="imgPortfolio">
-                    <img src="images/portfolio/03.jpg" alt="Pompadour" id="pompadour" />
+                    <img src="images/portfolio/03.jpg" alt="image du site Pompadour" id="pompadour" />
                     <figcaption>
-                        <h3>Pompadour</h3>
+                        <h2>Pompadour</h2>
                         <p>Création du logo de Pompadour, vente de prêt-à-porter masculin</p>
                         <div class="icone_projets">
                             <i class="fas fa-eye"></i>
@@ -163,9 +167,9 @@
             </div>
             <div class="creative projets">
                 <figure class="imgPortfolio">
-                    <img src="images/portfolio/04.jpg" alt="cahier" id="cahier" />
+                    <img src="images/portfolio/04.jpg" alt="image du site FDS et Associés" id="cahier" />
                     <figcaption>
-                        <h3>FDS & Associés</h3>
+                        <h2>FDS & Associés</h2>
                         <p>Réalisation d'un site internet pour un cabinet d'expertise comptable</p>
                         <div class="icone_projets">
                             <i class="fas fa-eye"></i>
@@ -175,9 +179,9 @@
             </div>
             <div class="corporate projets">
                 <figure class="imgPortfolio">
-                    <img src="images/portfolio/05.jpg" alt="shopping" id="shopping" />
+                    <img src="images/portfolio/05.jpg" alt="image du site Lolita" id="shopping" />
                     <figcaption>
-                        <h3>Lolita</h3>
+                        <h2>Lolita</h2>
                         <p>Création d'un site e-commerce pour Lolita, vente de chaussures</p>
                         <div class="icone_projets">
                             <i class="fas fa-eye"></i>
@@ -187,9 +191,9 @@
             </div>
             <div class="portfolio projets">
                 <figure class="imgPortfolio">
-                    <img src="images/portfolio/06.jpg" alt="city" id="city" />
+                    <img src="images/portfolio/06.jpg" alt="image du site Waller" id="city" />
                     <figcaption>
-                        <h3>Waller</h3>
+                        <h2>Waller</h2>
                         <p>Réalisation dun site vitrine d'un artiste peintre</p>
                         <div class="icone_projets">
                             <i class="fas fa-eye"></i>
@@ -199,9 +203,9 @@
             </div>
             <div class="creative projets">
                 <figure class="imgPortfolio">
-                    <img src="images/portfolio/07.jpg" alt="fusée" id="fusée" />
+                    <img src="images/portfolio/07.jpg" alt="image du site Fast Car" id="fusée" />
                     <figcaption>
-                        <h3>Fast Car</h3>
+                        <h2>Fast Car</h2>
                         <p>Création du site internet d'un chauffeur privé</p>
                         <div class="icone_projets">
                             <i class="fas fa-eye"></i>
@@ -211,9 +215,9 @@
             </div>
             <div class="corporate projets">
                 <figure class="imgPortfolio">
-                    <img src="images/portfolio/08.jpg" alt="bureau" id="bureau" />
+                    <img src="images/portfolio/08.jpg" alt="image du site Maxi-Office" id="bureau" />
                     <figcaption>
-                        <h3>Maxi-Office</h3>
+                        <h2>Maxi-Office</h2>
                         <p>Référencement naturel du site Maxi-Office, vente en ligne de matériel de bureau</p>
                         <div class="icone_projets">
                             <i class="fas fa-eye"></i>
@@ -226,12 +230,13 @@
     <!-- Section Contact -->
     <section id="section_contact">
         <div id="formulaire">
-            <h1>Contact Info</h1>
+            
+            <form id="form_contact" method="post" action="traitement.php">
+                <h1>Contact Info</h1>
             <p><span>WebAgency SAS</span>
                 <br>25 rue d'Hauteville 75010 Paris
                 <br>Tel : 01 02 03 04 05</p>
-            <form id="form_contact" method="post" action="traitement.php">
-                <input type="text" name="NOM" id="nom" placeholder="NOM" required />
+                <input type="text" name="Nom" id="nom" placeholder="Nom" required />
                 <br>
                 <input type="email" name="email" id="email" placeholder="Email" required />
                 <br>
@@ -239,7 +244,7 @@
                 <br>
                 <textarea name="Message" id="Message" rows="10" placeholder="Message" required></textarea>
                 <br>
-                <input type="submit" value="Envoyer" style="width: 140px; height: 35px; color: white; border-radius: 5px; background-color: #43ADD8; margin-bottom: 15px; margin-top: 5px; border-bottom: solid #4494BB; font-size: 0.9em" />
+                <input type="submit" value="Envoyer" style="width: 140px; height: 35px; color: white; border-radius: 5px; background-color: #43ADD8; border-bottom: solid #4494BB; font-size: 0.9em" />
             </form>
         </div>
         <div class="fond_carte">
